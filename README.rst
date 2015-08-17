@@ -18,7 +18,7 @@ will remain valid template code that can be rendered with a second pass.
 The second pass fetches the partially-rendered template from the cache and
 performs a second render on it, using RequestContext to provide user-specific
 context to the template. This enables very fast generation of pages that have
-user-specific content, by bypassing the need to use the
+minimal user-specific content, by bypassing the need to use the
 ``CACHE_MIDDLEWARE_ANONYMOUS_ONLY`` setting.
 
 This implementation uses a secret delimiter that makes it safe against the
